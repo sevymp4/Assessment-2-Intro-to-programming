@@ -2,7 +2,7 @@
 import time #Gives a time before codes gets printed
 print ("\n\t Vending Machine, Please wait...")
 time.sleep(2.2) #Uses the imported time to 
-menu = {"A1": {"ItemName": 'Water', "ItemPrice": 1.00},
+menu = {"A1": {"ItemName": 'Water', "itemPrice": 1.00},
         "A2": {"ItemName": 'Coca cola', "ItemPrice": 2.40},
         "A3": {"ItemName": 'Fanta', "ItemPrice": 2.36},
         "B1": {"ItemName": 'Kitkat',"ItemPrice": 1.95},
