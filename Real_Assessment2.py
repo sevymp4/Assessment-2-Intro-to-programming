@@ -24,7 +24,7 @@ def menu_items(): #Function to constantly display the menu.
     
     for code, details in menu.items():
         
-        item_name = details["ItemName"] #Converts the values from ItemName & ItemPrice into a value.
+        item_name = details["ItemName"] #This pulls the name of the item.
         
         item_price = details.get("ItemPrice") or details.get("itemPrice") 
         
@@ -48,7 +48,7 @@ def cash_insert(): #Function to insert cash into your balance.
             else:
                 print("\nInvalid amount! Please enter cash between 1 and 100.") #If the user were to go above 100 or less than 1.
         except ValueError:
-            print("\nInvalid input. Please enter a number.") #If the user inputs a datatype that isn't a string this message is printed. The code then loops back.
+            print("\nInvalid input. Please enter a number.") #If the user inputs a datatype that is a string, this message is printed. The code then loops back.
 
 def order(): #Function to order items within the menu.
     global balance 
